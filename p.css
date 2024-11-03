@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+
+body {
+    color: #111;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Thambi 2', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+span {
+    font-size: 5rem;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menambahkan delay untuk setiap huruf */
+.container span:nth-child(1) { animation-delay: 0.1s; }
+.container span:nth-child(2) { animation-delay: 0.2s; }
+.container span:nth-child(3) { animation-delay: 0.3s; }
+.container span:nth-child(4) { animation-delay: 0.4s; }
+.container span:nth-child(5) { animation-delay: 0.5s; }
+.container span:nth-child(6) { animation-delay: 0.6s; }
+.container span:nth-child(7) { animation-delay: 0.7s; }
+.container span:nth-child(8) { animation-delay: 0.8s; }
+.container span:nth-child(9) { animation-delay: 0.9s; }
+.container span:nth-child(10) { animation-delay: 1s; }
+.container span:nth-child(11) { animation-delay: 1.1s; }
+
+/* Warna untuk setiap huruf */
+.container span:nth-child(1) { color: #ffffff; } /* Merah */
+.container span:nth-child(2) { color: #f8f8f8; } /* Oranye */
+.container span:nth-child(3) { color: #ffffff; }
+.container span:nth-child(4) { color: #ffffff; } /* Kuning */
+.container span:nth-child(5) { color: #ffffff; } /* Hijau */
+.container span:nth-child(6) { color: #ffffff; } /* Biru */
+.container span:nth-child(8) { color: #ffffff; } /* Ungu */
+.container span:nth-child(9) { color: #ffffff; } /* Magenta */
+.container span:nth-child(10) { color: #ffffff; } /* Cyan */
+.container span:nth-child(11) { color: #ff0000; }
